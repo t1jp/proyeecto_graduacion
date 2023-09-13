@@ -174,9 +174,18 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
+    <Content Include="Views\Home\ConocimientoComprension.cshtml" />
+    <Content Include="Views\Home\ObjetivoAlcance.cshtml" />
+    <Content Include="Views\Home\RiesgoMaterialidad.cshtml" />
+    <Content Include="Views\Home\PlaneacionEspecifica.cshtml" />
+    <Content Include="Views\Home\ElaboracionPrograma.cshtml" />
+    <Content Include="Views\Home\Pruebas.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\TecnicasMuestreo.cshtml" />
+    <Content Include="Views\Home\Evidencias.cshtml" />
+    <Content Include="Views\Home\PapelesTrabajo.cshtml" />
+    <Content Include="Views\Home\Hallazgos.cshtml" />
+    <Content Include="Views\Home\GenerarInforme.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

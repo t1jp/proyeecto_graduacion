@@ -13,18 +13,61 @@ namespace CapaPresentacionAdmin.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult ConocimientoComprension()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult ObjetivoAlcance()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
+
+        public ActionResult RiesgoMaterialidad()
+        {
+            return View();
+        }
+
+        public ActionResult PlaneacionEspecifica()
+        {
+            return View();
+        }
+
+        public ActionResult ElaboracionPrograma()
+        {
+            return View();
+        }
+
+        public ActionResult Pruebas()
+        {
+            return View();
+        }
+
+        public ActionResult TecnicasMuestreo()
+        {
+            return View();
+        }
+
+        public ActionResult Evidencias()
+        {
+            return View();
+        }
+
+        public ActionResult PapelesTrabajo()
+        {
+            return View();
+        }
+
+        public ActionResult Hallazgos()
+        {
+            return View();
+        }
+
+        public ActionResult GenerarInforme()
+        {
+            return View();
+        }
+
+
     }
 }
