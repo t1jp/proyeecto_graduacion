@@ -11,25 +11,22 @@
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand ps-3" href="index.html">Sistema de Auditoria</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+        @*<form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
             <div class="input-group">
                 <input class="form-control" type="text" placeholder="Search for..." aria-label="Search for..." aria-describedby="btnNavbarSearch" />
                 <button class="btn btn-primary" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
             </div>
-        </form>
+        </form>*@
         <!-- Navbar-->
-        <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+        <ul class="navbar-nav ms-auto me-0 me-md-3 my-2 my-md-0">
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#!">Settings</a></li>
-                    <li><a class="dropdown-item" href="#!">Activity Log</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    <li><a class="dropdown-item" href="#!">Cerrar Sesion</a></li>
                 </ul>
             </li>
         </ul>
@@ -40,81 +37,166 @@
                 <div class="sb-sidenav-menu">
                     <div class="nav">
                         <div class="sb-sidenav-menu-heading">Core</div>
-                        <a class="nav-link" href="index.html">
+                        <a class="nav-link" href="@Url.Action("Index","Home")">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Dashboard
                         </a>
                         <div class="sb-sidenav-menu-heading">Ingreso de Datos</div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCon" aria-expanded="false" aria-controls="collapseCon">
                             <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
                             Conocimiento y Comprension de la Entidad
                             <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                         </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                        <div class="collapse" id="collapseCon" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Informacion de la Entidad</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Entrevistas y Encuestas</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Analisis Comparativos de Estados Financieros</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">FODA</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Causa-Efecto</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
-                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                            Analisis de los Riesgos y Materialidad
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="layout-static.html">Riesgos</a>
-                                <a class="nav-link" href="layout-sidenav-light.html">Materialidad</a>
-                            </nav>
-                        </div>
-                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
-                            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
-                            Pages
-                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                        </a>
-                        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
-                            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                <a class="nav-link" href="@Url.Action("InformacionEntidad","Home")">Informacion de la Entidad</a>
                                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
-                                    Authentication
+                                    Entrevistas y Encuestas
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
                                 <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="login.html">Login</a>
-                                        <a class="nav-link" href="register.html">Register</a>
-                                        <a class="nav-link" href="password.html">Forgot Password</a>
+                                        <a class="nav-link" href="@Url.Action("Entrevistas","Home")">Entrevistas</a>
+                                        <a class="nav-link" href="@Url.Action("Encuestas","Home")">Encuestas</a>
                                     </nav>
                                 </div>
-                                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
-                                    Error
-                                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
-                                </a>
-                                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
-                                    <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="401.html">401 Page</a>
-                                        <a class="nav-link" href="404.html">404 Page</a>
-                                        <a class="nav-link" href="500.html">500 Page</a>
-                                    </nav>
-                                </div>
+                                <a class="nav-link" href="@Url.Action("AnalisisComparativosEsFinan","Home")">Analisis Comparativos de Estados Financieros</a>
+                                <a class="nav-link" href="@Url.Action("FODA","Home")">FODA</a>
+                                <a class="nav-link" href="@Url.Action("CausaEfecto","Home")">Causa-Efecto</a>
                             </nav>
                         </div>
-                        <div class="sb-sidenav-menu-heading">Addons</div>
-                        <a class="nav-link" href="charts.html">
+                        <a class="nav-link" href="@Url.Action("ObjetivoAlcance","Home")">
                             <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
-                            Charts
+                            Objetivos y Alcance de la Auditoria
                         </a>
-                        <a class="nav-link" href="tables.html">
-                            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
-                            Tables
+                        <a class="nav-link" href="@Url.Action("AnalisisPreControlInterno","Home")">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Análisis Preliminar del Control Interno
                         </a>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseAnaRiMat" aria-expanded="false" aria-controls="collapseAnaRiMat">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Análisis de los Riesgos y la Materialidad
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseAnaRiMat" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="@Url.Action("Riesgo","Home")">Riesgos</a>
+                                <a class="nav-link" href="@Url.Action("Materialidad","Home")">Materialidad</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="@Url.Action("PlaneacionEspecifica","Home")">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Planeación Especifica de la Auditoria
+                        </a>
+                        <a class="nav-link" href="@Url.Action("ElaboracionProgamada","Home")">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Elaboración de Programa de Auditoria
+                        </a>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePruebas" aria-expanded="false" aria-controls="collapsePruebas">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Pruebas de Auditoria
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapsePruebas" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="@Url.Action("PruebaControl","Home")">Pruebas de Control</a>
+                                <a class="nav-link" href="@Url.Action("PruebaAnalitica","Home")">Pruebas Analiticas</a>
+                                <a class="nav-link" href="@Url.Action("PruebaSustantiva","Home")">Pruebas Sustantivas</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTecnicas" aria-expanded="false" aria-controls="collapseTecnicas">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Técnicas de Muestreo
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseTecnicas" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="@Url.Action("MuestrasBloque","Home")">Muestras por Bloque</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasIncidental","Home")">Muestras Incidental</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasUnidad","Home")">Muestras por Unidad</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasSistematicas","Home")">Muestras Sistematicas</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasAleatorias","Home")">Muestras Aleatorias</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseEvidencias" aria-expanded="false" aria-controls="collapseEvidencias">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Evidencias de Auditoria
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseEvidencias" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="@Url.Action("EvidenciasFisicas","Home")">Evidencias Fisicas</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasDocumentales","Home")">Evidencias Documentales</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasTestimoniales","Home")">Evidencias Testimoniales</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasAnaliticas","Home")">Evidencias Analiticas</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="@Url.Action("PapelesTrabajo","Home")">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Papeles de Trabajo
+                        </a>
+                        <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseHallazgos" aria-expanded="false" aria-controls="collapseHallazgos">
+                            <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
+                            Hallazgos de Auditoria
+                            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                        </a>
+                        <div class="collapse" id="collapseHallazgos" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                            <nav class="sb-sidenav-menu-nested nav">
+                                <a class="nav-link" href="@Url.Action("HallazgosCondicion","Home")">Hallazgos de Condicion</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosCriterio","Home")">Hallazgos de Criterio</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosCausa","Home")">Hallazgos de Causa</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosEfecto","Home")">Hallazgos de Efecto</a>
+                            </nav>
+                        </div>
+                        <a class="nav-link" href="@Url.Action("GenerarInforme","Home")">
+                            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+                            Generar Informe
+                        </a>
+                        @*<a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+            <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+            Pages
+            <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+        </a>
+        <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+            <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                    Authentication
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="login.html">Login</a>
+                        <a class="nav-link" href="register.html">Register</a>
+                        <a class="nav-link" href="password.html">Forgot Password</a>
+                    </nav>
+                </div>
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                    Error
+                    <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                </a>
+                <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                    <nav class="sb-sidenav-menu-nested nav">
+                        <a class="nav-link" href="401.html">401 Page</a>
+                        <a class="nav-link" href="404.html">404 Page</a>
+                        <a class="nav-link" href="500.html">500 Page</a>
+                    </nav>
+                </div>
+            </nav>
+        </div>*@
+                        @*<div class="sb-sidenav-menu-heading">Addons</div>
+        <a class="nav-link" href="charts.html">
+            <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
+            Charts
+        </a>
+        <a class="nav-link" href="tables.html">
+            <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+            Tables
+        </a>*@
                     </div>
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    Jose.Amaya
                 </div>
             </nav>
         </div>

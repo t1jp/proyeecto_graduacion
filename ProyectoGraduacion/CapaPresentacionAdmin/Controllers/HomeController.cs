@@ -13,7 +13,32 @@ namespace CapaPresentacionAdmin.Controllers
             return View();
         }
 
-        public ActionResult ConocimientoComprension()
+        public ActionResult InformacionEntidad()
+        {
+            return View();
+        }
+
+        public ActionResult Entrevistas()
+        {
+            return View();
+        }
+
+        public ActionResult Encuestas()
+        {
+            return View();
+        }
+
+        public ActionResult AnalisisComparativosEsFinan()
+        {
+            return View();
+        }
+
+        public ActionResult FODA()
+        {
+            return View();
+        }
+
+        public ActionResult CausaEfecto()
         {
             return View();
         }
@@ -23,7 +48,17 @@ namespace CapaPresentacionAdmin.Controllers
             return View();
         }
 
-        public ActionResult RiesgoMaterialidad()
+        public ActionResult AnalisisPreControlInterno()
+        {
+            return View();
+        }
+
+        public ActionResult Riesgo()
+        {
+            return View();
+        }
+
+        public ActionResult Materialidad()
         {
             return View();
         }
@@ -38,17 +73,62 @@ namespace CapaPresentacionAdmin.Controllers
             return View();
         }
 
-        public ActionResult Pruebas()
+        public ActionResult PruebaControl()
         {
             return View();
         }
 
-        public ActionResult TecnicasMuestreo()
+        public ActionResult PruebaAnalitica()
         {
             return View();
         }
 
-        public ActionResult Evidencias()
+        public ActionResult PruebaSustantiva()
+        {
+            return View();
+        }
+
+        public ActionResult MuestrasBloque()
+        {
+            return View();
+        }
+
+        public ActionResult MuestrasIncidental()
+        {
+            return View();
+        }
+
+        public ActionResult MuestrasUnidad()
+        {
+            return View();
+        }
+
+        public ActionResult MuestrasSistematicas()
+        {
+            return View();
+        }
+
+        public ActionResult MuestrasAleatorias()
+        {
+            return View();
+        }
+
+        public ActionResult EvidenciasFisicas()
+        {
+            return View();
+        }
+
+        public ActionResult EvidenciasDocumentales()
+        {
+            return View();
+        }
+
+        public ActionResult EvidenciasTestimoniales()
+        {
+            return View();
+        }
+
+        public ActionResult EvidenciasAnaliticas()
         {
             return View();
         }
@@ -58,7 +138,22 @@ namespace CapaPresentacionAdmin.Controllers
             return View();
         }
 
-        public ActionResult Hallazgos()
+        public ActionResult HallazgosCondicion()
+        {
+            return View();
+        }
+
+        public ActionResult HallazgosCriterio()
+        {
+            return View();
+        }
+
+        public ActionResult HallazgosCausa()
+        {
+            return View();
+        }
+
+        public ActionResult HallazgosEfecto()
         {
             return View();
         }
