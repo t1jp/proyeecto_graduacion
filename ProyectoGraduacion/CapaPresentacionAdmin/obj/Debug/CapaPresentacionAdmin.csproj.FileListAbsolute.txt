@@ -170,3 +170,5 @@ C:\Users\Eduardo Amaya\Desktop\Proyecto_Graduacion\ProyectoGraduacion\CapaPresen
 C:\Users\Eduardo Amaya\Desktop\Proyecto_Graduacion\ProyectoGraduacion\CapaPresentacionAdmin\obj\Debug\CapaPresentacionAdmin.csproj.CopyComplete
 C:\Users\Eduardo Amaya\Desktop\Proyecto_Graduacion\ProyectoGraduacion\CapaPresentacionAdmin\obj\Debug\CapaPresentacionAdmin.dll
 C:\Users\Eduardo Amaya\Desktop\Proyecto_Graduacion\ProyectoGraduacion\CapaPresentacionAdmin\obj\Debug\CapaPresentacionAdmin.pdb
+C:\Users\Eduardo Amaya\Desktop\Proyecto_Graduacion\ProyectoGraduacion\CapaPresentacionAdmin\bin\CapaDatos.dll
+C:\Users\Eduardo Amaya\Desktop\Proyecto_Graduacion\ProyectoGraduacion\CapaPresentacionAdmin\bin\CapaDatos.pdb
