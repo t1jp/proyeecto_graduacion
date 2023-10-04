@@ -49,20 +49,20 @@
                         </a>
                         <div class="collapse" id="collapseCon" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="@Url.Action("InformacionEntidad","Home")">Informacion de la Entidad</a>
+                                <a class="nav-link" href="@Url.Action("InformacionEntidad","Conocimiento")">Informacion de la Entidad</a>
                                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
                                     Entrevistas y Encuestas
                                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                                 </a>
                                 <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
                                     <nav class="sb-sidenav-menu-nested nav">
-                                        <a class="nav-link" href="@Url.Action("Entrevistas","Home")">Entrevistas</a>
-                                        <a class="nav-link" href="@Url.Action("Encuestas","Home")">Encuestas</a>
+                                        <a class="nav-link" href="@Url.Action("Entrevistas","Conocimiento")">Entrevistas</a>
+                                        <a class="nav-link" href="@Url.Action("Encuestas","Conocimiento")">Encuestas</a>
                                     </nav>
                                 </div>
-                                <a class="nav-link" href="@Url.Action("AnalisisComparativosEsFinan","Home")">Analisis Comparativos de Estados Financieros</a>
-                                <a class="nav-link" href="@Url.Action("FODA","Home")">FODA</a>
-                                <a class="nav-link" href="@Url.Action("CausaEfecto","Home")">Causa-Efecto</a>
+                                <a class="nav-link" href="@Url.Action("AnalisisComparativosEsFinan","Conocimiento")">Analisis Comparativos de Estados Financieros</a>
+                                <a class="nav-link" href="@Url.Action("FODA","Conocimiento")">FODA</a>
+                                <a class="nav-link" href="@Url.Action("CausaEfecto","Conocimiento")">Causa-Efecto</a>
                             </nav>
                         </div>
                         <a class="nav-link" href="@Url.Action("ObjetivoAlcance","Home")">
@@ -80,8 +80,8 @@
                         </a>
                         <div class="collapse" id="collapseAnaRiMat" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="@Url.Action("Riesgo","Home")">Riesgos</a>
-                                <a class="nav-link" href="@Url.Action("Materialidad","Home")">Materialidad</a>
+                                <a class="nav-link" href="@Url.Action("Riesgo","AnalisisRiesgoMaterialidad")">Riesgos</a>
+                                <a class="nav-link" href="@Url.Action("Materialidad","AnalisisRiesgoMaterialidad")">Materialidad</a>
                             </nav>
                         </div>
                         <a class="nav-link" href="@Url.Action("PlaneacionEspecifica","Home")">
@@ -99,9 +99,9 @@
                         </a>
                         <div class="collapse" id="collapsePruebas" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="@Url.Action("PruebaControl","Home")">Pruebas de Control</a>
-                                <a class="nav-link" href="@Url.Action("PruebaAnalitica","Home")">Pruebas Analiticas</a>
-                                <a class="nav-link" href="@Url.Action("PruebaSustantiva","Home")">Pruebas Sustantivas</a>
+                                <a class="nav-link" href="@Url.Action("PruebaControl","Pruebas")">Pruebas de Control</a>
+                                <a class="nav-link" href="@Url.Action("PruebaAnalitica","Pruebas")">Pruebas Analiticas</a>
+                                <a class="nav-link" href="@Url.Action("PruebaSustantiva","Pruebas")">Pruebas Sustantivas</a>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseTecnicas" aria-expanded="false" aria-controls="collapseTecnicas">
@@ -111,11 +111,11 @@
                         </a>
                         <div class="collapse" id="collapseTecnicas" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="@Url.Action("MuestrasBloque","Home")">Muestras por Bloque</a>
-                                <a class="nav-link" href="@Url.Action("MuestrasIncidental","Home")">Muestras Incidental</a>
-                                <a class="nav-link" href="@Url.Action("MuestrasUnidad","Home")">Muestras por Unidad</a>
-                                <a class="nav-link" href="@Url.Action("MuestrasSistematicas","Home")">Muestras Sistematicas</a>
-                                <a class="nav-link" href="@Url.Action("MuestrasAleatorias","Home")">Muestras Aleatorias</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasBloque","Muestras")">Muestras por Bloque</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasIncidental","Muestras")">Muestras Incidental</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasUnidad","Muestras")">Muestras por Unidad</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasSistematicas","Muestras")">Muestras Sistematicas</a>
+                                <a class="nav-link" href="@Url.Action("MuestrasAleatorias","Muestras")">Muestras Aleatorias</a>
                             </nav>
                         </div>
                         <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseEvidencias" aria-expanded="false" aria-controls="collapseEvidencias">
@@ -125,10 +125,10 @@
                         </a>
                         <div class="collapse" id="collapseEvidencias" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="@Url.Action("EvidenciasFisicas","Home")">Evidencias Fisicas</a>
-                                <a class="nav-link" href="@Url.Action("EvidenciasDocumentales","Home")">Evidencias Documentales</a>
-                                <a class="nav-link" href="@Url.Action("EvidenciasTestimoniales","Home")">Evidencias Testimoniales</a>
-                                <a class="nav-link" href="@Url.Action("EvidenciasAnaliticas","Home")">Evidencias Analiticas</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasFisicas","Evidencias")">Evidencias Fisicas</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasDocumentales","Evidencias")">Evidencias Documentales</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasTestimoniales","Evidencias")">Evidencias Testimoniales</a>
+                                <a class="nav-link" href="@Url.Action("EvidenciasAnaliticas","Evidencias")">Evidencias Analiticas</a>
                             </nav>
                         </div>
                         <a class="nav-link" href="@Url.Action("PapelesTrabajo","Home")">
@@ -142,10 +142,10 @@
                         </a>
                         <div class="collapse" id="collapseHallazgos" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                             <nav class="sb-sidenav-menu-nested nav">
-                                <a class="nav-link" href="@Url.Action("HallazgosCondicion","Home")">Hallazgos de Condicion</a>
-                                <a class="nav-link" href="@Url.Action("HallazgosCriterio","Home")">Hallazgos de Criterio</a>
-                                <a class="nav-link" href="@Url.Action("HallazgosCausa","Home")">Hallazgos de Causa</a>
-                                <a class="nav-link" href="@Url.Action("HallazgosEfecto","Home")">Hallazgos de Efecto</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosCondicion","Hallazgos")">Hallazgos de Condicion</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosCriterio","Hallazgos")">Hallazgos de Criterio</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosCausa","Hallazgos")">Hallazgos de Causa</a>
+                                <a class="nav-link" href="@Url.Action("HallazgosEfecto","Hallazgos")">Hallazgos de Efecto</a>
                             </nav>
                         </div>
                         <a class="nav-link" href="@Url.Action("GenerarInforme","Home")">
